@@ -10,6 +10,7 @@ function myFunction() {
   }
 
   //------SWITCH-------
+  let day;
   switch (new Date().getDay()) {
     case 0:
       day = "Sunday";
@@ -32,3 +33,4 @@ function myFunction() {
     case 6:
       day = "Saturday";
   }
+  document.getElementById("demo1").innerHTML = "Today is " + day;
