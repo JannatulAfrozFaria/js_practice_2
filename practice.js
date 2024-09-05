@@ -34,3 +34,18 @@ function myFunction() {
       day = "Saturday";
   }
   document.getElementById("demo1").innerHTML = "Today is " + day;
+
+
+  //DEFAULT------KEYWORD----
+  let text;
+switch (new Date().getDay()) {
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+    break;
+  default:
+    text = "Looking forward to the Weekend";
+}
+document.getElementById("demo2").innerHTML = text;
